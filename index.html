@@ -46,6 +46,7 @@
     <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/dialog-polyfill/0.4.2/dialog-polyfill.min.js"></script>
     <style>
     #view-source {
         position: fixed;
@@ -381,7 +382,6 @@
     </div>
     <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/text-only/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
     <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/dialog-polyfill/0.4.2/dialog-polyfill.min.js"></script>
     <script>
     document.getElementById('submitBtn').onclick = function(e) {
         e.preventDefault();
@@ -421,7 +421,7 @@
         var closeButton = document.getElementById('cancelBtn');
         var showButton = document.getElementById('show-modal');
         if (!dialog.showModal) {
-            dialogPolyfill.registerDialog(dialog);
+            window.dialogPolyfill.registerDialog(dialog);
         }
         var closeClickHandler = function(event) {
             dialog.close();
