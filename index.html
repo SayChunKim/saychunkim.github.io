@@ -421,7 +421,7 @@
         var closeButton = document.getElementById('cancelBtn');
         var showButton = document.getElementById('show-modal');
         if (!dialog.showModal) {
-            window.dialogPolyfill.registerDialog(dialog);
+            dialogPolyfill.registerDialog(dialog);
         }
         var closeClickHandler = function(event) {
             dialog.close();
