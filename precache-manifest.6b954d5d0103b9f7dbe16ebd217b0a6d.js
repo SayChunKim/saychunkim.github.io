@@ -1,10 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "322b8391363cfa128ca6f98d9b5ee363",
-    "url": "/app.html"
-  },
-  {
-    "revision": "93a0177ccdc3bc74b4e7",
+    "revision": "c526a6849db6c02f7ba2",
     "url": "/css/app.79537068.css"
   },
   {
@@ -124,8 +120,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/works/mhd_estore.jpg"
   },
   {
-    "revision": "93a0177ccdc3bc74b4e7",
-    "url": "/js/app.734ce659.js"
+    "revision": "27ec4ae4f5e99f1836446c299c714e13",
+    "url": "/index.html"
+  },
+  {
+    "revision": "c526a6849db6c02f7ba2",
+    "url": "/js/app.fb33f615.js"
   },
   {
     "revision": "9f56ac4d60b74562c9f8",
