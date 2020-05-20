@@ -282,10 +282,10 @@ define("./service-worker.js",['./workbox-64f1e998'], function (workbox) { 'use s
     "revision": "c6e8ff78ec311b5f12944e50dc5bb802"
   }, {
     "url": "/index.html",
-    "revision": "d0024f84c25517b22959f8f152bb333c"
+    "revision": "b459303e9d96f67246b6dc82b21b7a06"
   }, {
     "url": "/js/app.js",
-    "revision": "725678476a03e52fde12e9599ee16983"
+    "revision": "372cf65de46c92084c14a9d606190aa8"
   }, {
     "url": "/robots.txt",
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca"
