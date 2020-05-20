@@ -285,7 +285,7 @@ define("./service-worker.js",['./workbox-64f1e998'], function (workbox) { 'use s
     "revision": "d0024f84c25517b22959f8f152bb333c"
   }, {
     "url": "/js/app.js",
-    "revision": "d30fe11680da7d045743bcc96bbabd2e"
+    "revision": "725678476a03e52fde12e9599ee16983"
   }, {
     "url": "/robots.txt",
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca"

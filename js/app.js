@@ -1262,7 +1262,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var workbox_window__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! workbox-window */ \"./node_modules/workbox-window/build/workbox-window.prod.es5.mjs\");\n\nvar wb = new workbox_window__WEBPACK_IMPORTED_MODULE_0__[\"Workbox\"](\"\".concat(\"/\", \"service-worker.js\"));\n\nif ('serviceWorker' in navigator) {\n  wb.addEventListener('controlling', function () {\n    window.location.reload();\n  });\n  wb.register();\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (wb);\n\n//# sourceURL=webpack:///./src/registerServiceWorker.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var workbox_window__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! workbox-window */ \"./node_modules/workbox-window/build/workbox-window.prod.es5.mjs\");\n\nvar wb = new workbox_window__WEBPACK_IMPORTED_MODULE_0__[\"Workbox\"](\"\".concat(\"/\", \"sw.js\"));\n\nif ('serviceWorker' in navigator) {\n  wb.addEventListener('controlling', function () {\n    window.location.reload();\n  });\n  wb.register();\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (wb);\n\n//# sourceURL=webpack:///./src/registerServiceWorker.js?");
 
 /***/ }),
 
