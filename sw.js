@@ -1,4 +1,4 @@
-importScripts("/precache-manifest.d899b81966bbf4a8c3bda052f2ed6133.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/precache-manifest.2e23781c79f963a920be12cf44adbc4c.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 /* eslint-disable no-console */
 
@@ -30,6 +30,17 @@ if (process.env.NODE_ENV === 'production') {
     error(error) {
       console.error('Error during service worker registration:', error);
     },
+  });
+}
+
+if ('serviceWorker' in navigator) {
+  let refreshing = false;
+  // This is triggered when a new service worker take over
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (refreshing) return;
+    refreshing = true;
+
+    window.location.reload();
   });
 }
 
