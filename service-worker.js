@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.fb12ce44c12a2e51c80b1c831edc1b13.js"
+  "/precache-manifest.ec2ccd0ea34c2b296262d08ebe84b08e.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "vuelearn"});
