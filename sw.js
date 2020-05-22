@@ -1,4 +1,4 @@
-importScripts("/precache-manifest.2e23781c79f963a920be12cf44adbc4c.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/precache-manifest.bfc6208358ca74a76fae97be39419048.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 /* eslint-disable no-console */
 
@@ -23,6 +23,9 @@ if (process.env.NODE_ENV === 'production') {
     },
     updated() {
       console.log('New content is available; please refresh.');
+      setTimeout(() => {
+        window.location.reload(true);
+      }, 1000);
     },
     offline() {
       console.log('No internet connection found. App is running in offline mode.');
@@ -30,17 +33,6 @@ if (process.env.NODE_ENV === 'production') {
     error(error) {
       console.error('Error during service worker registration:', error);
     },
-  });
-}
-
-if ('serviceWorker' in navigator) {
-  let refreshing = false;
-  // This is triggered when a new service worker take over
-  navigator.serviceWorker.addEventListener('controllerchange', () => {
-    if (refreshing) return;
-    refreshing = true;
-
-    window.location.reload();
   });
 }
 
